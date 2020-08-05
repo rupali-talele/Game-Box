@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  font-size: 5vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.5rem;
+  background-color: gainsboro;
+  height: 10vh;
+  display: flex;
+  font-weight: bolder;
+  justify-content: center;
+  background-color: whitesmoke;
+  align-items: center;
+  border-bottom: black 0.1rem solid;
+}
+
+.back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10%;
+  margin-left: 3vw;
+}
+
+button {
+  height: 5vh;
+  font-size: 3vh;
+  padding: 0.5vh;
+  background-color: whitesmoke;
+  border: 2px solid;
+}
+.title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score-board {
+  width: 20%;
+  border: gainsboro 2px solid;
+  margin: 5vh auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
+  height: 10vh;
+  background-color: whitesmoke;
+  position: relative;
+}
+.img {
+  height: 10vh;
+}
+.badge {
+  background-color: turquoise;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vh;
+  padding: 0.2rem;
+}
+
+.user {
+  position: absolute;
+  top: 3vh;
+  left: -2.5vh;
+}
+.computer {
+  position: absolute;
+  top: 3vh;
+  right: -6vh;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  align-content: center;
+}
+.choice {
+  border: gray 0.1rem solid;
+  border-radius: 50%;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 4vw;
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+.choice_label {
+  padding-top: 0.5rem;
+}
+.result {
+  text-align: center;
+}
+.result > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4vh;
+  color: whitesmoke;
+}
+.option_chosen,
+.round {
+  font-size: 3vh;
+  color: whitesmoke;
+  margin: 0.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.choice:hover {
+  background-color: turquoise;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.end,
+.play {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+#end_game,
+#play_again {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#play_again {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .user {
+    font-size: 1vh;
+    top: 1.5vh;
+    left: -2vh;
+  }
+  .computer {
+    font-size: 1vh;
+    top: 1.5vh;
+    right: -3.5vh;
+  }
+  header {
+    font-size: 3vh;
+    letter-spacing: 0.2rem;
+  }
+  .choices {
+    width: 30vw;
+  }
+  .choice {
+    width: 60%;
+  }
+  .choice_label {
+    font-size: 1.5vh;
+  }
+  .score-board {
+    width: 30%;
+    height: 5vh;
+    font-size: 2vh;
+  }
+  .result > p,
+  .option_chosen > p,
+  .round > p {
+    font-size: 2vh;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <header>
+      <div class="back">
+        <a href="../index.html"><button>Home</button></a>
+      </div>
+      <div class="title">
+        Rock Paper Scissors
+      </div>
+    </header>
+    <div class="score-board">
+      <div class="user badge">user</div>
+      <div class="computer badge">computer</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="round">
+      <p></p>
+    </div>
+    <div class="option_chosen">
+      <p></p>
+    </div>
+    <div class="result"><p></p></div>
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" alt="Rock" class="img" />
+        <p class="choice_label">Rock</p>
+      </div>
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" alt="Paper" class="img" />
+        <p class="choice_label">Paper</p>
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./images/scissor.png" alt="scissors" class="img" />
+        <br />
+        <p class="choice_label">Scissors</p>
+      </div>
+    </div>
+    <div class="move">
+      <p>Make your move!</p>
+    </div>
+    <div class="end">
+      <input type="button" value="END GAME" id="end_game" />
+    </div>
+
+    <div class="play">
+      <input type="button" value="PLAY AGAIN" id="play_again" />
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
