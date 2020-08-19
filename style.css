@@ -38,7 +38,7 @@ body {
 }
 
 .game {
-  width: 30vh;
+  width: 30vw;
   height: 30vh;
   border: 2px black solid;
   display: flex;
@@ -74,4 +74,6 @@ img {
 a {
   text-decoration: none;
   font-size: 3vh;
+}
+@media only screen and (max-width: 600px) {
 }
