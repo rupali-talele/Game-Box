@@ -120,6 +120,7 @@ header {
 
   header {
     height: 8vh;
+    font-size: 3vh;
   }
   .playerdiv,.result {
     font-size: 3vh;
