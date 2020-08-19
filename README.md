@@ -18,7 +18,7 @@ Functionalities-
     Scores of user and computer are adjusted according to their selections.
     After End Game button is clicked, the final winner is displayed.
 
-3)Connect-Four
+3) Connect-Four
 
 For Rules,please check out - https://en.wikipedia.org/wiki/Connect_Four
 
